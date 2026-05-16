@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Course Registration Form</title> 
+</head>
+<body>
+
+    <h1>Student Course Registration Form</h1>
+    <hr>
+    <p>Please fill in all the required information to create your account.</p>
+    <form action="" method="post">
+        <label for="fullName">Full Name:</label>
+        <input id="fullName" type="text" required placeholder="Enter your real full name">
+        <br><br>
+
+        <label for="username">Username:</label>
+        <input id="username" type="text" name="username" required placeholder="Choose a username">
+        <br><br>
+
+        <label for="email">Email Address:</label>
+        <input id="email" type="email" name="email" required placeholder="Enter your Email">
+        <br><br>
+
+        <label for="phone">Phone Number:</label>
+        <input id="phone" type="tel" name="phone" required placeholder="05XXXXXXXX" pattern="[0-9]{10}" > 
+        <br><br><br>
+
+        <label for="password">Password:</label>
+        <input id="password" type="password" name="password" required placeholder="Enter your password" minlength="8">
+        <br><br>
+
+        <label for="birthDate">Date of Birth:</label>
+        <input id="birthDate" type="date" name="birthDate" required>
+        <br><br>
+
+        <label for="course">Select Your Course:</label>
+        <select id="course" name="course" required>
+            <option value="">-- Choose a course --</option>
+            <option value="html-css">HTML & CSS</option>
+            <option value="javascript">JavaScript</option>
+            <option value="python">Python Programming</option>
+            <option value="java">Java Programming</option>
+            <option value="web-development">Web Development</option>
+            <option value="graphic-design">Graphic Design</option>
+            <option value="cyber-security">Cyber Security</option>
+        </select> 
+        <br><br><br>
+
+        <label>Study Type:</label>
+        <br><br>
+
+        <input id="online" type="radio" name="studyType" value="online" required>
+        <label for="online">Online</label>
+        <br>
+
+        <input id="campus" type="radio" name="studyType" value="on campus">
+        <label for="campus">On Campus</label>
+        <br><br>
+
+        <label>Gender:</label>
+        <br><br>
+
+        <input id="male" type="radio"required name="gender" value="male" >
+        <label for="male">Male</label>
+        <br>
+
+        <input id="female" type="radio" name="gender" value="female">
+        <label for="female">Female</label>
+        <br><br>
+
+        <label>Skills You Have: (Select all that apply)</label>
+        <br><br>
+
+        <input id="html" type="checkbox" name="skills" value="HTML">
+        <label for="html">HTML</label>
+        <br>
+
+        <input id="css" type="checkbox" name="skills" value="CSS"> 
+        <label for="css">CSS</label>
+        <br>
+
+        <input id="javascript" type="checkbox" name="skills" value="JavaScript">
+        <label for="javascript">JavaScript</label> 
+        <br>
+
+        <input id="python" type="checkbox" name="skills" value="Python">
+        <label for="python">Python</label>
+        <br>
+
+        <input id="java" type="checkbox" name="skills" value="Java">
+        <label for="java">Java</label>
+        <br><br>
+
+        <label for="experience">Your Programming Experience (0 - 10):</label>
+        <br><br>
+        <input id="experience" type="range" name="experience" min="0" max="10" value="0">
+        <br><br><br>
+
+        <label for="profilePicture">Upload Profile Picture:</label>
+        <br><br>
+        <input id="profilePicture" type="file" required name="profilePicture">
+        <br><br>
+
+        <label for="about">Tell us about yourself:</label>
+        <br>
+        <textarea id="about" name="about" required  placeholder="Write something about yourself" rows="6" cols="50"></textarea>
+        <br><br>
+
+        <input type="submit" value="Register">
+        <input type="reset" value="Reset"> 
+        <br><br>
+    </form>
+</body>
+</html>
