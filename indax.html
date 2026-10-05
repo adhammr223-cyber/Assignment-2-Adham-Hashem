@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <title>Student Course Registration Form</title> 
 </head>
@@ -8,10 +9,10 @@
 
     <h1>Student Course Registration Form</h1>
     <hr>
-    <p>Please fill in all the required information to create your account.</p>
+    <p>This is a practice registration form. It does not create an account or save your details. Do not enter a real password.</p>
     <form action="" method="post">
         <label for="fullName">Full Name:</label>
-        <input id="fullName" type="text" required placeholder="Enter your real full name">
+        <input id="fullName" name="fullName" type="text" required placeholder="Enter your real full name">
         <br><br>
 
         <label for="username">Username:</label>
@@ -99,7 +100,7 @@
 
         <label for="profilePicture">Upload Profile Picture:</label>
         <br><br>
-        <input id="profilePicture" type="file" required name="profilePicture">
+        <input id="profilePicture" type="file" accept="image/*" required name="profilePicture">
         <br><br>
 
         <label for="about">Tell us about yourself:</label>
